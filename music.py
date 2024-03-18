@@ -5,14 +5,11 @@ import time
 import pickle
 from selenium.webdriver.common.by import By
 import os
-# from win10toast import ToastNotifier
+from win10toast import ToastNotifier
 
-# toaster = ToastNotifier()
+toaster = ToastNotifier()
 def show_message(message,duration=5):
-    # toaster.show_toast("音乐播放器",
-    #                 message,
-    #                 duration=duration)
-    print(message)
+    toaster.show_toast("音乐播放器-刷新模块",message,duration=duration)
 
 def play(music):
     global playsData
