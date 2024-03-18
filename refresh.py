@@ -53,6 +53,7 @@ except Exception as e:
         pickle.dump(cookies, f)
     
 browser.get(f"https://music.163.com/#/my/m/music/playlist?id={playlist_id}")
+time.sleep(3)
 browser.switch_to.frame("g_iframe") # 切换到iframe
 musics=browser.find_elements(By.CSS_SELECTOR,'.tt>.ttc>.txt>a')
 Musics=[]
