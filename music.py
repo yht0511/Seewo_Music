@@ -63,7 +63,7 @@ else:
 
 for i in playsData:
     if time.time()-i['time']<3600*24*2:
-        musicData.remove(i)
+        musicData.remove(i["music"])
 try:
     show_message("程序启动",3)
     play(musicData[random.randint(0,len(musicData)-1)])
